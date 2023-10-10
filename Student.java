@@ -1,21 +1,32 @@
-package methodoverload;
+package org.college;
 
-public class Student {
-	public void getStudentInfo(int id) {
-		System.out.println("The id is: "+id);
-	}
-	public void getStudentInfo(int id,String name) {
-		System.out.println("Id: "+id+"name is: "+name);
-	}
-	public void getStudentInfo(String email, long phoneNumber) {
-		System.out.println("Email is"+email+"phonenumber: "+phoneNumber);
-	}
-	public static void main(String[] args) {
-		Student details = new Student();
-		details.getStudentInfo(14);
-		details.getStudentInfo(14,"Shalini");
-		details.getStudentInfo("kopula@gmail.com",9988776655l);
-		
+
+
+public class Student extends Department {
+	
+		public void studentName() {
+			System.out.println("Shalini");	
+		}
+		public void studentDept() {
+			System.out.println("cse");
+			
+		}
+		public void studentId() {
+			System.out.println("14");
+			
+		}
+		public static void main(String[] args) {
+			Student stu = new Student();
+			stu.studentName();
+			stu.studentDept();
+			stu.studentId();
+			stu.collegCode();
+			stu.collegeName();
+			stu.collegeRank();
+			stu.deptName();
+		}
+
 	}
 
-}
+
+
